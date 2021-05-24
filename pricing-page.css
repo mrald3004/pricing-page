@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 8vh;
+    background-color:#EDEEF1;
+}
+.logo{
+    display: flex;
+}
+.logo h3{
+    margin-left: 10px;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width:50%;
+    justify-content: space-between;
+
+}
+.image{
+    display: none;
+
+}
+.image img{
+    height:20px;
+}
+
+nav ul li{
+    font-size: 14px;
+}
+
+.pricing-container{
+
+    height: 50vh;
+    background-color:#EDEEF1;
+}
+
+
+
+
+.wrapper{
+ 
+    text-align: center;
+}
+  
+
+
+   .wrapper .topnav{
+       height: 80px;
+       width: 100px
+    }
+     .wrapper .topnav ul li{
+         display: inline-block;
+         line-height: 80px;
+         margin: 0 5px;
+     }
+
+    .topnav ul li a{
+        font-size: 17px;
+        padding:7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+
+    }
+     .wrapper h1{
+       
+         font-size: 52px;
+         margin-bottom: 20px;
+         letter-spacing: 5px;
+         padding-top: 15px;
+        
+
+         margin-top: 20px;
+         padding-bottom: 20px;
+         border-bottom: none;
+     
+     }
+
+
+     .wrapper h1 + p{
+         width: 60%;
+         margin: 0 auto 50px;
+         color:dark blue;
+    
+     }
+
+     .pricing_wrapper{
+
+        display: flex;
+        justify-content:space-between;
+        text-align: left;
+        margin-top: -20vh;
+        padding-left: 100px;
+        padding-right: 100px;
+     }
+
+     
+.pricing_items{
+   width:30%;
+    background: #fff;
+    margin: 5px 10px 50px;
+    padding: 30px 20px;
+    box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+ .pricing_items h3{
+    font-size: 26px;
+    color: tomato;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: none;
+
+}
+
+ .pricing_items p.money{
+    margin: 50px 0 20px;
+    color: tomato;
+
+}
+
+r .pricing_items p{
+    font-size: medium;
+}
+ .pricing_items h2{
+   
+    font-size: 26px;
+    color: darkblue;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: none;
+
+
+}
+.pricing_items ul,li.feature{
+    list-style:none;
+    margin: 0;
+    padding-left:3px;
+    position: relative;
+    font-size:0.9em;
+    
+
+}
+
+   ul,li.feature:not(:last-child){
+    margin-bottom: 0.5em;
+
+}
+.pricing_items ul li {
+    display:flex;
+    align-items: center;
+}
+ .pricing_items ul li img{
+     height: 10px;
+     margin-right: 10px;
+ }
+ 
+
+ .pricing_items a.btn{
+    display: block;
+    margin-top: 20px;
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    
+
+
+
+}
+@media screen and (max-width:1024px){
+
+    nav{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    nav ul{
+        display:none;
+    }
+  .image{
+      display:block;
+  }
+  .pricing_wrapper{
+      flex-direction: column;
+      align-items: center;
+      margin-top:0vh;
+      padding-top:50px;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  .pricing_items{
+      width:100%;
+
+  }
+  .pricing-container{
+      height:auto;
+      padding-bottom: 30px;
+
+  }
+  .pricing-container h1{
+      font-size: 100px;
+  }
+}
+
